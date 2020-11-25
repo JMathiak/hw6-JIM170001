@@ -90,6 +90,7 @@ int main()
   const char *magicn = fMagNum.c_str();
   string vN = "Version: " + to_string(fileHeader->versionNumber);
   const char *versn = vN.c_str();
+  int numrec = int(fileHeader->numRecords);
   string nR = "NumRecords: " + to_string(fileHeader->numRecords);
   const char *numr = nR.c_str();
   setCDKMatrixCell(myMatrix, 1,1,magicn);
@@ -97,7 +98,7 @@ int main()
   setCDKMatrixCell(myMatrix, 1,3, numr);
   int recordnum = 0;
   int row = 2;
-  while( recordnum <= 4 )
+  while( recordnum <= numrec )
     {
       binInfile.read((char *) fileRecord, sizeof(BinaryFileRecord)); 
   int column = 1;
