@@ -24,7 +24,7 @@ CXX = g++
 CPPFLAGS = -std=c++11  -I /scratch/perkins/include
 
 # compiler flags
-CXXFLAGS = -Wall
+CXXFLAGS = -Wall -Wno-write-strings
 
 # linker flags
 LDFLAGS = -L /scratch/perkins/lib
@@ -53,7 +53,9 @@ OBJS := $(patsubst %.cc,%.o,$(SRCS))
 # The default target.  Its a good idea to use 'all' as the default
 # so that the commands 'make' and 'make all' do the same thing.
 
-all: $(EXEC)
+all: 
+	git pull
+	make $(EXEC)
 
 #
 # Clean up files that we can regenerate or that we don't care about.
