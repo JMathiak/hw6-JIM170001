@@ -1,14 +1,17 @@
-# Filename:		Makefile
-# Date:			11/08/2020
-# Author:		Stephen Perkins
-# Email:		stephen.perkins@utdallas.edu
-# Version:		1.0
-# Copyright:		2020, All Rights Reserved
+
+# Filename Makefile 
+# Date November 25th, 2020
+# Author Josh Mathiak
+# Josh.Mathiak@UTDallas.edu
+# Course CS 3377.001 Fall 2020
+# Version 1.0 (or correct version)
+# Copyright 2020, All Rights Reserved
 #
-# Description:
+# Description
+# Stephen Perkins example Makefile.
+# 
+# 
 #
-#	A small project that will display a text based
-#	GUI based on Curses / CDK.
 
 
 # Set up needed values to support make's implicit commands
